@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     # LLM provider
-    llm_provider: LLMProvider = LLMProvider.DEEPSEEK
+    llm_provider: LLMProvider = LLMProvider.OPENROUTER
     llm_model: str = ""
     llm_temperature: float = 0.0
     llm_max_tokens: int = 4096

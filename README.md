@@ -73,18 +73,18 @@ __start__
 Switch provider in `.env` — no code changes needed:
 
 ```bash
-# DeepSeek (default)
+# OpenRouter (default — deepseek/deepseek-v4-flash)
+LLM_PROVIDER=openrouter
+OPENROUTER_API_KEY=sk-or-...
+LLM_MODEL=deepseek/deepseek-v4-flash   # any OpenRouter model slug
+
+# DeepSeek direct
 LLM_PROVIDER=deepseek
 DEEPSEEK_API_KEY=sk-...
 
 # OpenAI
 LLM_PROVIDER=openai
 OPENAI_API_KEY=sk-...
-
-# OpenRouter
-LLM_PROVIDER=openrouter
-OPENROUTER_API_KEY=sk-or-...
-LLM_MODEL=deepseek/deepseek-v3   # any OpenRouter model slug
 ```
 
 ## Observability
